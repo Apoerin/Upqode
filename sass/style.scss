@@ -1,0 +1,600 @@
+$logo-and-icons-color: #503392;
+$search-form-color: #e8e4f1;
+$search-icon-color: #666566;
+$section-background-color: #fff;
+$banner-title-color: #fff200;
+$title-color: #232323;
+$highlight-color: #009dda;
+$description-color: #cccccc;
+$content-border-color: #ebebeb;
+$send-button-color: #ffff00;
+$facebook-icon-color: #6783b9;
+$google-icon-color: #e86a53;
+$twitter-icon-color: #71d6fa;
+$dribble-icon-color: #c0617f;
+$banner-gradient: linear-gradient(to right, rgba(46, 190, 234, 0.74) 0%, rgba(111, 108, 199, 0.74)29%, rgba(105, 80, 158, 0.74) 100%);
+$font-family: 'Lato', sans-serif;
+$max-width: 1600px;
+
+body, html {
+  position: relative;
+  min-width: 320px;
+  max-width: $max-width;
+  width:  100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: $section-background-color;
+  justify-content: space-around;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  width: 55%;
+}
+
+.navbar-brand h1 {
+  color: $logo-and-icons-color;
+  font-family: $font-family;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 5px 0 0 210px;
+}
+
+.navbar-brand span {
+  color: $highlight-color;
+  font-family: $font-family;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar a {
+  color: $title-color;
+  font-family: $font-family;
+  font-size: 16px;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.dropdown .products:after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: $title-color;
+  opacity: 0.8;
+  border-top: 2px solid $banner-title-color;
+  border-radius: unset;
+  margin-top: 15px;
+}
+
+.dropdown-item {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: lighter;
+  color: $section-background-color!important;
+  background-color: transparent;
+}
+
+.dropdown-item li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  color: $section-background-color;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: $banner-title-color!important;
+}
+
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu> a:after {
+  float: right;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar form {
+  float: right;
+}
+
+.form-inline .form-control {
+  width: 180px;
+  height: 30px;
+  background-color: $search-form-color;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+
+.form-inline .fa-search {
+  position: absolute;
+  margin: 0 0 0 139px;
+  display: block;
+  color: $search-icon-color;
+  font-size: 14px;
+}
+
+.navbar button {
+  color: $logo-and-icons-color;
+}
+
+.banner {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.carousel-indicators {
+  bottom: 15px;
+}
+
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.carousel-inner img {
+  display: block;
+  width: 100%\9;
+  height: 100%;
+}
+
+.carousel-item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $banner-gradient;
+  z-index: 10;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  z-index: 15;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 55%;
+  margin: 0 auto;
+  z-index: 20;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h3 {
+  font-family: $font-family;
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.carousel-caption span {
+  color: $banner-title-color;
+  font-size: 64px;
+}
+
+.carousel-caption p {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.7;
+  margin: 25px auto 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 3.7%;
+  height: 7.9%;
+  margin: auto 29px;
+  background-color: $search-form-color;
+  opacity: 0.3;
+}
+
+.why-choose {
+  padding: 50px 0;
+}
+
+.title {
+  width: 100%;
+  margin: auto;
+}
+
+.why-choose h3 {
+  font-family: $font-family;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color;
+  padding-top: 107px;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  font-family: $font-family;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $highlight-color;
+}
+
+.why-choose .title p {
+  font-family: $font-family;
+  font-weight: lighter;
+  text-align: center;
+  color: $description-color;
+  margin-top: 20px;
+}
+
+.why-choose .row {
+  justify-content: space-between;
+}
+
+.content {
+  margin: 70px 15px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.content i {
+  color: $logo-and-icons-color;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.content h6 {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.why-choose .content p {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+  color: $description-color;
+  word-spacing: 4px;
+  margin: 20px 0 30px;
+}
+
+.content:hover .hover {
+  display: block;
+}
+
+.hover {
+  position: absolute;
+  height: 58%;
+  top: 110px;
+  left: 0;
+  width: inherit;
+  background-color: $logo-and-icons-color;
+  display: none;
+}
+
+.hover div {
+  display: flex;
+  justify-content: center;
+}
+
+.hover p {
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: bolder!important;
+  text-transform: uppercase;
+  color: $section-background-color!important;
+  padding: 0;
+  margin: 40px auto 0;
+}
+
+.hover i {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.hover .fa-link {
+  color: $section-background-color;
+  background-color: $logo-and-icons-color;
+  border: 1px solid $section-background-color;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.hover .fa-search-plus {
+  color: $logo-and-icons-color;
+  background-color: $section-background-color;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 10px 10px;
+}
+
+.about {
+  height: auto;
+  margin-top: 90px;
+}
+
+.about h3 {
+  font-family: $font-family;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $title-color;
+  letter-spacing: 2px;
+}
+
+.about .light {
+  color: $description-color;
+  font-family: $font-family;
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+.about p {
+  color: $title-color;
+  font-family: $font-family;
+  word-spacing: 2px;
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+
+.progress {
+  height: 10px;
+  width: 100%;
+  border: 1px solid $description-color;
+  background-color: transparent;
+  border-radius: 0;
+  margin-bottom: 30px;
+  padding: 2px;
+}
+
+.progress .progress-bar {
+  position: relative;
+  background-color: $highlight-color;
+  -webkit-animation: animate-positive 3s;
+  animation: animate-positive 3s;
+}
+
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+
+@keyframes animate-positive{
+  0% { width: 0%; }
+}
+
+.name {
+  color: $title-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 10px 0;
+}
+
+.percent {
+  color: $title-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: bolder;
+  margin: 10px 0;
+  float: right;
+}
+
+.ipad {
+ margin: auto;
+  text-align: center;
+}
+
+.contact {
+  margin: 130px auto;
+}
+.contact .container, .footer .row {
+  width: 100%;
+}
+
+.contact .title {
+  text-align: center;
+  background-color: $section-background-color;
+  margin-bottom: 50px;
+}
+
+.contact .title h3 {
+  color: $title-color;
+  font-family: $font-family;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact .title p {
+  font-family: $font-family;
+  font-weight: lighter;
+  color: $description-color;
+  margin-top: 30px;
+}
+
+.contact .form {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: $title-color;
+  opacity: 0.7;
+  margin: auto;
+}
+
+form {
+  margin: 60px auto;
+}
+
+form input[type=text], form input[type=email] {
+  background-color: transparent;
+  border: 1px solid $section-background-color;
+  padding: 10px 24px;
+  margin: 5px;
+}
+
+form input[type=submit] {
+  font-family: $font-family;
+  font-size: 18px;
+  background-color: $send-button-color;
+  color: $title-color;
+  padding: 10px 40px;
+  border: none;
+}
+
+textarea {
+  width: 85%;
+  height: 150px;
+  resize: none;
+  background-color: transparent;
+  color: $section-background-color;
+  border: 1px solid $section-background-color;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: '';
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+[type="checkbox"]:not(:checked)+label:after,
+[type="checkbox"]:checked+label:after {
+  content: '✔';
+  position: absolute;
+  left: 58px;
+  font-size: 20px;
+  line-height: 1.1;
+  color: $section-background-color;
+  transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked)+label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+form label {
+  font-family: $font-family;
+  font-size: 18px;
+  color: $section-background-color;
+  padding-right: 163px;
+  font-weight: lighter;
+}
+
+.contact .address a, .contact .address span {
+  font-family: $font-family;
+  color: $section-background-color;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.contact .address a {
+  text-decoration: none;
+}
+
+.contact .address {
+  display: grid;
+  margin: 60px auto 140px;
+}
+
+.socials {
+  width: 100%;
+  height: 60px;
+  background-color: $title-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials span {
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: lighter;
+  color: $description-color;
+  padding: 15px;
+}
+
+.socials ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+.socials i {
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.fa-facebook-f {
+  color: $facebook-icon-color;
+}
+
+.fa-google-plus-g {
+  color: $google-icon-color;
+}
+
+.fa-twitter {
+  color: $twitter-icon-color;
+}
+
+.fa-dribbble {
+  color: $dribble-icon-color;
+}
